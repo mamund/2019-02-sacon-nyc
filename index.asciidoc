@@ -1,0 +1,86 @@
+// dblatex output (see http://dblatex.sourceforge.net/doc/manual/sec-params.html)
+//    a2x: --dblatex-opts "-P latex.output.revhistory=0 -P doc.publisher.show=0"
+
+= RESTful Web Microservices
+:author: Mike Amundsen
+:email: mca@amundsen.com
+:toc:
+
+== Overview
+Outline and reference materials for the SACon NYC 2019 talk https://conferences.oreilly.com/software-architecture/sa-ny/public/schedule/detail/71663["RESTful Web Microservices"].
+
+== Initial Proposal
+Below is what was submitted for the initial proposal. It appears on the https://conferences.oreilly.com/software-architecture/sa-ny/public/schedule/detail/71663[SACon website].
+
+Who is this presentation for?::
+ * Service designers, software architects, and developers
+ 
+Level::
+ * Intermediate
+
+Prerequisites::
+ * Familiarity with microservices, the web, and HTTP
+ * A working knowledge of Node.js
+ 
+What You'll Learn::
+ * Learn how to build stable, resilient, and reliable microservice that are "of" the web, not just "on" the web
+Understand how to maintain loose interop between services and safely manage change over time—even with services you don't control
+ * Discover the shared infrastructure services you need to put in place in order to grow a stable microservice ecosystem on the web
+ * Understand the role REST can play in microservice design, the importance of stable interfaces in front of changing code, and the value and challenges of supporting runtime discovery
+ * Learn how to design for emergent adaptability without adding needless complexity
+ 
+Description::
+A RESTful approach to microservices can improve the stability and resilience of services, reduce the need for extensive changes and redeployment when the domain model changes, and greatly increase the flexibility of individual services, including the ability to automatically work with other newly discovered services.
++
+Mike Amundsen walks you through building adaptable microservices that take advantage of the features of REST, including statelessness, self-description, and using hypermedia to discover and modify application state. You’ll learn how to design services that advertise themselves to the network, discover their own “partner” services, and can adapt to subtle changes to existing services without relying only on recode-and-redeploy patterns for maintaining overall system operation.
+
+== Suggested Outline
+Below is the suggested slide outline for the 90 minute session. This is an updated version of the http://amundsen.com/talks/2018-05-microcph/index.html["Discovering RESTful Microservices"] talk from CPH-Micro 2018.
+
+ * Introductions (5min)
+ ** Mike Amundsen
+ ** Amundsen Training
+ ** MSA Book/CAMBook
+ * Mapping the Landscape (10min)
+ ** Big Map
+ ** Not an End, but a Journey
+ ** Tools to Bring Along
+ ** Places to Visit
+ * The Web, HTTP, REST, Microservices (10)
+ ** Ted Nelson (Web)
+ ** Tim Berners-Lee (HTTP/HTML)
+ ** Roy Fielding (REST)
+ ** API Academy (Microservices)
+ * Fields of Purity (10min)
+ ** Stateless Microservices
+ ** Stability Patterns
+ * Caves of Persisius (10min)
+ ** Data Monoliths
+ ** Data Distribution (CacheResponse,RSync,Eventing,Multiples)
+ ** Stability Patterns
+ * Scholars of Aggregato (10min)
+ ** Composing and Aggregating Services
+ ** Orchestration/Choreography (Richardson)
+ ** Stability Patterns
+ * Valley of the Metamporphs (10min)
+ ** Dealing with Change Over Time
+ ** Fielding's Admonition (DON'T)
+ ** TCP/IP, HTTP, HTML (all multiple interoperative versions)
+ * Roses of Saymeh (10min)
+ ** What Do You Mean by That?
+ ** Alan Kay (Messages, Not Objects)
+ ** Structured Formats (HTML, VoiceXML, Atom, HAL, Siren, Cj, UBER)
+ * Port of Discovery (10min)
+ ** How Do You Find It in the First Place?
+ ** Design-Time (dependancies)
+ ** Build-Time (configuration)
+ ** Run-Time (discovery)
+ * So... (10min)
+ 
+
+
+== Reference
+TK
+
+
+
